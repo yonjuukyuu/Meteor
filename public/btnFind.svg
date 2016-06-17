@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2017 1380 154 201">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-btn);
+      }
+
+      .cls-2 {
+        fill: #fd6c2d;
+      }
+
+      .cls-3 {
+        fill: #f8fdff;
+        font-size: 24px;
+        font-family: AcuminPro-Regular, Acumin Pro;
+      }
+
+      .cls-4 {
+        stroke: #fcfcfc;
+        stroke-width: 1px;
+      }
+    </style>
+    <clipPath id="clip-btn">
+      <rect x="2017" y="1380" width="154" height="201"/>
+    </clipPath>
+  </defs>
+  <g id="btn" class="cls-1">
+    <g id="group-7" transform="translate(622 1028)">
+      <g id="group-4" transform="translate(-92 -80)">
+        <g id="group-1" transform="translate(463 -197)">
+          <rect id="rectangle-1" class="cls-2" width="154.906" height="93" transform="translate(1023 629)"/>
+        </g>
+        <rect id="rectangle-3" class="cls-2" width="109" height="129" transform="translate(1532 504)"/>
+        <text id="FIND_IT" data-name="FIND IT" class="cls-3" transform="translate(1509 487)"><tspan x="0" y="0">FIND IT</tspan></text>
+        <text id="FIND_IT-2" data-name="FIND IT" class="cls-3" transform="translate(1509 487)"><tspan x="0" y="0">FIND IT</tspan></text>
+      </g>
+      <path id="path-4" class="cls-4" d="M1502.531,478.5h22.117V581.32h-86.082" transform="translate(1 -80)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2017 1380 154 93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-btn);
+      }
+
+      .cls-2 {
+        fill: #e4002b;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fcfcfc;
+        stroke-width: 1px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-btn">
+      <rect x="2017" y="1380" width="154" height="93"/>
+    </clipPath>
+  </defs>
+  <g id="btn" class="cls-1">
+    <rect class="cls-4" x="2017" y="1380" width="154" height="93"/>
+    <g id="group-9" transform="translate(301 -250)">
+      <g id="group-4" transform="translate(230 1198)">
+        <g id="group-1" transform="translate(463 -197)">
+          <rect id="rectangle-1" class="cls-2" width="154.906" height="93" transform="translate(1023 629)"/>
+        </g>
+      </g>
+      <path id="path-4" class="cls-3" d="M1502.531,478.5h22.117V581.32h-86.082v60.938" transform="translate(329 1194)"/>
+    </g>
+  </g>
+</svg>

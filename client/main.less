@@ -1,0 +1,248 @@
+.sparta-container{
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.search-grey-bar{
+  background-color: #8c8c8c;
+  background-image: url("http://www.transparenttextures.com/patterns/az-subtle.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  .sparta-container{
+    width: 640px;
+  }
+  input{
+    width: 79%;
+    background: none;
+    border: 2px solid white;
+    padding: 10px;
+    float: left;
+    height: 70px;
+    margin-right: 1.5%;
+    color: white;
+  }
+  input:focus {outline:0;}
+  input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    text-transform: uppercase;
+  }
+  input::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    text-transform: uppercase;
+
+  }
+  input:-ms-input-placeholder { /* IE 10+ */
+    color: white;
+    text-transform: uppercase;
+
+  }
+  input:-moz-placeholder {
+    color: white;
+    text-transform: uppercase;
+
+  }
+
+
+}
+.btn-submit:focus {outline:0;}
+.btn-submit{
+  width: 119px;
+  display: flex;
+  color: white;
+  height: 155px;
+  border: 0;
+  background-repeat: no-repeat;
+  background: url("btnFind.svg") center;
+  font-family: GtWalsheimLight;
+  align-items: center;
+  font-weight: 100;
+  justify-content: center;
+  font-size: 20px;
+  cursor: default;
+}
+.btn-price{
+  width: 120px;
+  display: flex;
+  color: white;
+  height: 60px;
+  background: url("btn.svg") center;
+  font-family: GtWalsheimLight;
+  align-items: center;
+  font-weight: 100;
+  justify-content: center;
+  font-size: 20px;
+  cursor: default;
+}
+.list-group{
+  background: white;
+}
+.list-group-item-sparta{
+  height: 250px;
+  list-style-type: none;
+  border: 0;
+  margin-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  img{
+      width: 100%;
+      max-width: 375px;
+      float: left;
+  }
+  &-pull-left{
+    height: 125px;
+    width: 60%;
+    padding-left: 30px;
+    float: left;
+    .title{
+      font-size: 26px;
+      font-family: GtWalsheimBold;
+      display: block;
+    }
+    .city{
+      bottom: 15px;
+      display: block;
+      position: absolute;
+      font-family: GtWalsheimLight;
+      opacity: 0.8;
+      font-size: 20px;
+    }
+  }
+  &-pull-down{
+    float: left;
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 125px;
+    align-items: flex-end;
+    padding-left: 30px;
+    .pull-right{
+      width: 100%;
+      text-align: right;
+      a{
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        font-family: GtWalsheimLight;
+        font-size: 18px;
+
+
+      }
+    }
+  }
+  &-line{
+    border-bottom : 1px solid;
+    border-color: rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+  }
+}
+
+
+
+.glyphicon-refresh-animate {
+  -animation: spin .7s infinite linear;
+  -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+  from { -webkit-transform: rotate(0deg);}
+  to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+  from { transform: scale(1) rotate(0deg);}
+  to { transform: scale(1) rotate(360deg);}
+}
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+
+
+*,*:after,*:before{
+  box-sizing: border-box;
+}
+
+.select{
+  position: relative;
+  display: block;
+  /* margin: 0 auto; */
+  width: 100px;
+  /* max-width: 325px; */
+  color: #cccccc;
+  vertical-align: middle;
+  text-align: left;
+  margin-right: 1.5%;
+  float: left;
+  border: 2px solid white;
+  padding: 4px;
+  height: 70px;
+
+  .placeholder{
+    position: relative;
+    width: 85%;
+    height: 100%;
+    color: white;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 1.5%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:after{
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'FontAwesome';
+      content: '\f078';
+      z-index: 10;
+      right: 0px;
+    }
+  }
+
+  &.is-open{
+    .placeholder:after{
+      content: '\f077';
+    }
+    ul{
+      display: block;
+    }
+  }
+
+  &.select--white{
+    .placeholder{
+      background: #fff;
+      color: #999;
+    }
+  }
+  ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    color: black;
+    list-style: none;
+    padding: 0;
+    z-index: 100;
+    border: 2px solid white;
+
+    li{
+      display: block;
+      text-align: left;
+      padding: 0.8em 1em 0.8em 1em;
+      color: black;
+      cursor: pointer;
+
+      &:hover{
+        background: #4ebbf0;
+        color: #fff;
+      }
+    }
+  }
+}

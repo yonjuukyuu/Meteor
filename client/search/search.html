@@ -1,0 +1,55 @@
+
+<template name="search">
+        <div class="search-grey-bar">
+            <div class="sparta-container">
+               <!-- <div class="select">
+                    <span class="placeholder">Rent</span>
+                    <ul>
+                        <li data-value="all">All</li>
+                        <li data-value="rent">Rent</li>
+                        <li data-value="buy">Buy</li>
+                    </ul>
+                    <input type="hidden" name="changeme"/>
+                </div>-->
+                 <input type="text" name="search" class="" width="250px" id="searchEngine" placeholder="Search...">
+                <button class="btn-submit" name="search2"></button>
+            </div>
+        </div>
+
+
+    <div class="sparta-container">
+        <ul class="list-group">
+            {{#if searching}}
+            {{> loading}}
+            {{else}}
+            {{#each apartment}}
+            <li class="list-group-item-sparta clearfix">
+                <img src="../f-9.jpg" alt="">
+                <span class="pull-right btn-price">{{price}}</span>
+
+                <span class="list-group-item-sparta-pull-left">
+                    <span class="title">{{title}}</span>
+                    <span class="description">{{description}}</span>
+                </span>
+                 <span class="list-group-item-sparta-pull-down">
+                     <span class="city">{{city}}</span>
+                     <span class="pull-right"><a href="apartment/{{_id}}">Details</a></span>
+
+                </span>
+
+            </li>
+            <div class="list-group-item-sparta-line"></div>
+            {{else}}
+            <p class="alert alert-warning">Nothing found for {{query}}. Sorry, bub.</p>
+            {{/each}}
+            {{/if}}
+        </ul>
+    </div>
+</template>
+
+<template name="loading">
+    <span class="glyphicon glyphicon-dashboard  glyphicon-refresh-animate"></span>
+</template>
+
+
+

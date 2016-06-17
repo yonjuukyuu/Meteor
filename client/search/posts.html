@@ -1,0 +1,26 @@
+
+<template name="posts">
+      Inside post
+    {{#if Template.subscriptionsReady}}
+        {{#each apartment}}
+          <li class="list-group-item-sparta clearfix">
+                <img src="../f-9.jpg" alt="">
+                <span class="pull-right btn-price">{{this.price}}</span>
+
+                    <span class="list-group-item-sparta-pull-left">
+                        <span class="title">{{title}}</span>
+                        <span class="description">{{description}}</span>
+                    </span>
+                     <span class="list-group-item-sparta-pull-down">
+                         <span class="city">{{city}}</span>
+                         <span class="pull-right"><a href="apartment/{{_id}}">Details</a></span>
+
+                    </span>
+          </li>
+        {{/each}}
+    {{else}}
+         <p>nothing to show</p>
+    {{/if}}
+
+      <div class="list-group-item-sparta-line"></div>
+</template>
