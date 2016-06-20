@@ -4,7 +4,7 @@
 
 FlowRouter.route('/', {
     action: function() {
-        BlazeLayout.render('sparta_layout', {main: 'search'});
+        BlazeLayout.render('sparta_layout', {top: 'banner', main: 'search'});
     }
 });
 FlowRouter.route('/backend', {

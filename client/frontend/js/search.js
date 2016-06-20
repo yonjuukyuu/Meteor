@@ -5,7 +5,7 @@ import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
 import { check } from 'meteor/check';
 
-import { Apartment } from '../../imports/apartament.js';
+import { Apartment } from '../../../imports/apartament.js';
 
 
 Template.search.onCreated( () => {
