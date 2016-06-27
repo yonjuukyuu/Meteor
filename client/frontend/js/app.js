@@ -16,3 +16,4 @@ $( document ).ready(function() {
         parent.find('input[type=hidden]').attr('value', $(this).attr('data-value') );
     });
 });
+

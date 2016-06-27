@@ -7,10 +7,17 @@ FlowRouter.route('/', {
         BlazeLayout.render('sparta_layout', {top: 'banner', main: 'search'});
     }
 });
-FlowRouter.route('/backend', {
+FlowRouter.route('/backend/dashboard', {
     action: function() {
         BlazeLayout.render('sparta_layout', {main: 'admin'});
     }
+});
+
+FlowRouter.route('/backend', {
+    name: "backend"
+    /*action: function() {
+        BlazeLayout.render('admin_main', {login: 'login', register: 'register'});
+    }*/
 });
 
 FlowRouter.route('/apartment/:postId', {
